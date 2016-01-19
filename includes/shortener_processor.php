@@ -20,7 +20,7 @@ class shortener_processor {
     }
 
     protected function urlExistsInDb($url) {
-        $this->dbconn->query("SELECT sshorturl FROM ushr.tshorturls WHERE slongurl = :slongurl;");
+        $this->dbconn->query("SELECT sshorturl FROM ushr.tshorturls WHERE slongurl = :slongurl AND now() <= dtexpired;");
         $this->dbconn->bind(':slongurl', $url);
         $result = $this->dbconn->single();
 

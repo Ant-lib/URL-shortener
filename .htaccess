@@ -2,5 +2,5 @@
 	Options +FollowSymLinks
 	RewriteEngine On	 
 	 
-	RewriteRule ^(\w+)$ ./URL-shortener/serve.php?short=$1
+	RewriteRule ^(\w+)/?$ ./URL-shortener/includes/process_short_link.php?short=$1
 </IfModule>

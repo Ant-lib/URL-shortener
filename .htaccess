@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+	Options +FollowSymLinks
+	RewriteEngine On	 
+	 
+	RewriteRule ^(\w+)$ ./URL-shortener/serve.php?short=$1
+</IfModule>

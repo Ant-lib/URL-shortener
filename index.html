@@ -1,0 +1,29 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ant.directory | URL shortener</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+  </head>
+  <body>
+
+  <div class="container">
+     
+     <div class="body">
+       <form action="./php_scripts/process_long_link.php" method="post">
+         <input name="url" type="text" />
+         <input type="submit" value="get short link" />
+       </form>
+     </div>
+  </div>
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
